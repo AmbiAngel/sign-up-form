@@ -28,31 +28,32 @@
                     <li>
                         <div class="input-containers">
                             <label for="first-name">First Name</label>
-                            <input id="first-name" type="text">
+                            <input id="first-name" type="text" required placeholder="John">
                         </div>
                         <div class="input-containers">
                             <label for="last-name">Last Name</label>
-                            <input id="last-name" type="text">
+                            <input id="last-name" type="text" required placeholder="Doe">
                         </div>
                     </li>
                     <li>
                         <div class="input-containers">
                             <label for="email">Email</label>
-                            <input id="email" type="email">
+                            <input id="email" type="email" required placeholder="coolguy@gmail.com">
                         </div>
                         <div class="input-containers">
                             <label for="phone-num">Phone Number</label>
-                            <input title="5555555555, 555-555-5555, or +1(555)555-5555" pattern="(\+1)?\(?[0-9]{3}\)?-?[0-9]{3}-?[0-9]{4}" id="phone-num" type="tel">
+                            <input required placeholder="555-555-5555" title="5555555555, 555-555-5555, or +1(555)555-5555" pattern="(\+1)?\(?[0-9]{3}\)?-?[0-9]{3}-?[0-9]{4}" id="phone-num" type="tel">
                         </div>
                     </li>
                     <li>
                         <div class="input-containers">
                             <label for="password">Password</label>
-                            <input id="password" type="password">
+                            <input required placeholder="Password" id="password" type="password">
                         </div>
                         <div class="input-containers">
                             <label for="confirm-password">Confirm Password</label>
-                            <input id="confirm-password" type="password">
+                            <input placeholder="Password" required id="confirm-password" type="password">
+                            <span class="confirm-pwd-msg color-red"></span>
                         </div>
                     </li>
                 </ul>
