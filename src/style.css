@@ -112,17 +112,21 @@ li > .input-containers:first-child{
 input:not(:placeholder-shown):invalid{
     border-color: red;
 }
+input:not(:placeholder-shown):not(:focus):valid{
+    border-color: green;
+}
 
 input{
-    border-color: #76767641;
+    border-color: #d4d4d441;
     border-radius: 5px;
     height: 1.2rem;
     width: 10rem;
     font-size: .7rem;
+    outline:none;
 }
 
 input:focus{
-    border-color: blue; 
+    border: blue 2px solid; 
 }
 
 form button{
@@ -175,4 +179,8 @@ form button{
         right: 0%;
         bottom: 0;
     }
+}
+
+.confirm-pwd-msg{
+    font-size: .7rem;
 }
