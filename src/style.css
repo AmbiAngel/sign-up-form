@@ -69,7 +69,6 @@ button{
 
 .form-desc, .form-inputs, .buttons{
     padding: 30px;
-    padding-right: 30%;
 }
 
 .form-inputs{
@@ -147,5 +146,33 @@ form button{
 @media(max-width:1118px){
     html,body{
         font-size: 20px;
+    }
+}
+
+@media(max-width:645px){
+    html,body{
+        font-size: 15px;
+    }
+    .content-container{
+        flex-flow: column-reverse nowrap;
+    }
+    .logo-container{
+
+        /* z-index: -1; */
+        width: 100%;
+    }
+    .logo-bg{
+        width: 100%;
+    }
+    .form-container{
+        width: 100%;
+    }
+    .angel-overlay{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0;
+        right: 0%;
+        bottom: 0;
     }
 }
